@@ -180,3 +180,8 @@ def train_model(train_data,train_labels_one_hot,batch_size,
                    validation_data=(test_data, test_labels_one_hot))
  
     model1.evaluate(test_data, test_labels_one_hot)
+import numpy as np
+# Explore the dataset
+batch_id = 3
+sample_id = 5
+display_stats(cifar10_dataset_folder_path, batch_id, sample_id)
